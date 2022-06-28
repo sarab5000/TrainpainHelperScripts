@@ -20,7 +20,7 @@ public class main : MonoBehaviour
 
     private void Login(string customId)
     {
-        var request = new LoginWithCustomIDRequest { CustomId = "tarektest208", CreateAccount = false };
+        var request = new LoginWithCustomIDRequest { CustomId = customId, CreateAccount = false };
         PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
     }
 
